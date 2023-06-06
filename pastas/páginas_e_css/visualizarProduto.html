@@ -89,21 +89,6 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
-      .btn1{
-            border: none;
-            outline: none;
-            height: 50px;
-            width: 100%;
-            background-color: rgb(247, 243, 12);
-            color: white;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-        .btn1:hover{
-            background-color: white;
-            border: 1px solid;
-            color: black;
-        }
     </style>
 
     
@@ -144,10 +129,9 @@
             <a class="nav-link" href="#" onclick="location.href='fazerLogin.html'">Área do cliente</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" onclick="location.href='salvos.html'">Salvos</a>
-          </li>
+            <a class="nav-link" href="#" onclick="location.href='salvos.html'">Salvos</a>          </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#" onclick="location.href='Sacola.html'">Sacola</a>
+            <a class="nav-link" href="#" onclick="location.href='Sacola.html'">Sacola</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" onclick="location.href='contato.html'">Atendimento</a>
@@ -173,7 +157,7 @@
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#" onclick="location.href='hq.html'">[HQ's]</a>
+            <a class="nav-link active" href="#" onclick="location.href='hq.html'">[HQ's]</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">[Animes]</a>
@@ -195,7 +179,7 @@
     </div>
   </nav>
 
-  <div id ="HQ" class="w-auto p-3"  style="background-color: black;"><h2 color>Home > Sacola > Finalizar compra
+  <div id ="HQ" class="w-auto p-3"  style="background-color: black;"><h2 color>Home > HQ's > Thanos: Final Infinito 
 </div>
 
   <!-- Marketing messaging and featurettes
@@ -205,85 +189,25 @@
   <div class="container marketing">
 
     <!-- Three columns of text below the carousel -->
-    <h2>Selecione a forma de pagamento</h2> <br> <br>
+    <div class="row">
+        <h2>HQ's</h2>
       <div class="row">
-          <div class="col-lg-4">
-            <input type="radio" id="html" name="fav_language" value="Pagamento">
-  <label for="html">Cartão de credito</label>
-            <h5>Valor total: R$288,33 SEM JUROS</h5>
+          <div class="col-lg-6">
+            <img src="https://m.media-amazon.com/images/I/A1wgchgMmUL.jpg" alt="Marvel_Essenciais_hq" width="230" height="300"/>
           </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-          </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-            <img src="https://investidorsardinha.r7.com/wp-content/uploads/2021/08/bandeiras-de-cartao-de-credito-o-que-sao-e-quais-as-principais-no-brasil.jpg" alt="Marvel_Essenciais_hq" width="450" height="200"/>
-          </div><!-- /.row -->
+      <div class="col-lg-6">
+        <h2 class="fw-normal">Thanos: Final Infinito</h2>
+        <p>R$29,90</p>
+        <p>Em estoque</p>
+        <button id="minus">−</button>
+<input type="number" value="0" id="input"/>
+<button id="plus">+</button> <br> <br>
+<button>Adicionar a sacola</button> <br> <br>
+<button>Adicionar aos salvos</button> <br> <br>
+<h5>Calcule seu frete</h5>
+<input type="number" value="" id="input"/> <br> <br>
+<a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank">Não sei meu CEP*</a>
           </div>
-            <div class="row">
-                <div class="col-lg-4">
-                  <input type="radio" id="html" name="fav_language" value="Pagamento">
-        <label for="html">Cartão de débito</label>
-                  <h5>Valor total: R$288,33</h5>
-                </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAA1BMVEX///+nxBvIAAAAR0lEQVR4nO3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPBgxUwAAU+n3sIAAAAASUVORK5CYII=" alt="Marvel_Essenciais_hq" width="450" height="200"/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <input type="radio" id="html" name="fav_language" value="Pagamento">
-        <label for="html">Transferência(Internet Banking)</label>
-      <p>O pagamento deve ser realizado até as 10hrs de hoje</p>
-                  <h5>Valor total: R$288,33</h5>
-                </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                  <img src="https://www.pagbrasil.com/wp-content/uploads/2019/07/bandeiras-online-transfer@2x.png" alt="Marvel_Essenciais_hq" width="450" height="200"/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <input type="radio" id="html" name="fav_language" value="Pagamento">
-        <label for="html">Pagamento em dinheiro</label>
-      <p>O pagamento deve ser realizado até as 12hrs de hoje</p>
-                  <h5>Valor total: R$288,33</h5>
-                </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                  <img src="https://static.ricmais.com.br/uploads/2020/05/loterias-caixa-1092x437.png" alt="Marvel_Essenciais_hq" width="450" height="200"/>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <input type="radio" id="html" name="fav_language" value="Pagamento">
-        <label for="html">Pagamento via pix</label>
-      <p>O pagamento deve ser realizado até as 10hrs de hoje</p>
-                  <h5>Valor total: R$288,33</h5>
-                </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                  <img src="https://www.bcb.gov.br/content/estabilidadefinanceira/piximg/logo_pix.png" alt="Marvel_Essenciais_hq" width="450" height="200"/>
-                </div>
-            </div>
-                
-
-     <!-- Three columns of text below the carousel -->
-     <div class="row">
-      <div class="col-lg-4">
-          </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-            <h2>RESUMO</h2>
-            <p>Subtotal: 259,33 </p>
-            <p>Frete: R$29,00</p>
-            <h4>Total do pedido: 288,33</h4>
-            <p><a class="btn btn-dark" href="#">Prosseguir com essa forma de pagamento&raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
   <!-- FOOTER -->
       <div id="footer" class="w-auto p-3" style="background-color: white">
         <div class="container">
