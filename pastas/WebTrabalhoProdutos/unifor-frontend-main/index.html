@@ -70,6 +70,37 @@
 
     <div class="container">
         <div class="row">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Layer2</a>
+                  <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Watchmen-smiley.svg/402px-Watchmen-smiley.svg.png" height="10%" width="10%"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-auto mb-md-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" onclick="location.href='home.html'">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="location.href='fazerLogin.html'">Área do cliente</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="location.href='salvos.html'">Salvos</a>            </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="location.href='Sacola.html'">Sacola</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="location.href='contato.html'">Atendimento</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              <hr>
+              <hr>
+              <hr>
+              <hr>
             <h1 class="list-name text-center">Lista de Produtos</h1>
             <hr>
             <div id="output"></div>
@@ -86,6 +117,46 @@
             </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="footer" class="w-auto p-3" style="background-color: white">
+        <div class="container">
+          <div class="row">
+            <div class="col">ATENDIMENTO AO CLIENTE</div>
+            <div class="col-7"></div>
+            <div class="col">AJUDA E SUPORTE</div>
+          </div>
+          <div class="row">
+            <div class="col">&CircleDot;<a href="#">Política de frete</a></div>
+            <div class="col-7"></div>
+            <div class="col">&CircleDot;<a href="#">Contate-nos</a></div>
+          </div>
+          <div class="row">
+            <div class="col">&CircleDot;<a href="#">Devolução</a></div>
+            <div class="col-7"></div>
+            <div class="col">
+              &CircleDot;<a href="#">Método de pagamento</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">&CircleDot;<a href="#">Como pedir</a></div>
+            <div class="row">
+              <div class="col">&CircleDot;<a href="#">Rastrear</a></div>
+            </div>
+          </div>
+        </div>
+      </div> 
     <script>
         axios.get('http://localhost:3000/produto')
             .then(function (response) {

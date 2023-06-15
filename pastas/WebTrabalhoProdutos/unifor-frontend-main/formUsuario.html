@@ -17,12 +17,12 @@
 
         if (id !== null) {
 
-            axios.get('http://localhost:3000/produto/'+ id +'')
+            axios.get('http://localhost:3000/usuario/'+ id +'')
             .then(function (response) {
                 document.getElementById('_id').value            =   response.data._id;
-                document.getElementById('Preço').value      =   response.data.Preço;
-                document.getElementById('nome').value           =   response.data.nome;
-                document.getElementById('Descrição').value     =   response.data.Descrição;
+                document.getElementById('Nome').value      =   response.data.Nome;
+                document.getElementById('Email').value           =   response.data.Email;
+                document.getElementById('Senha').value     =   response.data.Senha;
 
             })
             .catch(function (err) {
@@ -33,9 +33,9 @@
 
         function titulo() {
             if (id) {
-                document.getElementById("titulo").innerHTML = 'Editar Produto'
+                document.getElementById("titulo").innerHTML = 'Editar Usuario'
             } else {
-                document.getElementById("titulo").innerHTML = 'Adicionar Produto'
+                document.getElementById("titulo").innerHTML = 'Cadastrar Usuario'
             }
         }
         
@@ -86,11 +86,11 @@
             <h1 id="titulo"><script>titulo();</script></h1>
             <hr>
             <div id="output"></div>
-            <a class="icon-link" href="index.html">
+            <a class="icon-link" href="usuario.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
                 </svg>
-                Verificar Lista
+                Visualizar Usuarios
             </a>
         </div>
         <div class="row">
@@ -102,17 +102,17 @@
                 <form action="" id="form">
                     <input type="hidden" class="form-control" id="_id">
                     <div class="mb-3">
-                        <label for="Preço" class="form-label">Preço</label>
-                        <input type="number" class="form-control" id="Preço">
+                        <label for="Nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="Nome">
                         
                     </div>
                     <div class="mb-3">
-                        <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="nome">
+                        <label for="Email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="Email">
                     </div>
                     <div class="mb-3">
-                        <label for="Descrição" class="form-label">Descrição</label>
-                        <input type="text" class="form-control" id="Descrição">
+                        <label for="Senha" class="form-label">Senha</label>
+                        <input type="text" class="form-control" id="Senha">
                     </div>
                     <div class="mb-3">
 
@@ -126,69 +126,66 @@
             </div>
         </div>
     </div>
-</div>
-</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div id="footer" class="w-auto p-3" style="background-color: white">
-<div class="container">
-  <div class="row">
-    <div class="col">ATENDIMENTO AO CLIENTE</div>
-    <div class="col-7"></div>
-    <div class="col">AJUDA E SUPORTE</div>
-  </div>
-  <div class="row">
-    <div class="col">&CircleDot;<a href="#">Política de frete</a></div>
-    <div class="col-7"></div>
-    <div class="col">&CircleDot;<a href="#">Contate-nos</a></div>
-  </div>
-  <div class="row">
-    <div class="col">&CircleDot;<a href="#">Devolução</a></div>
-    <div class="col-7"></div>
-    <div class="col">
-      &CircleDot;<a href="#">Método de pagamento</a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">&CircleDot;<a href="#">Como pedir</a></div>
-    <div class="row">
-      <div class="col">&CircleDot;<a href="#">Rastrear</a></div>
-    </div>
-  </div>
-</div>
-</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="footer" class="w-auto p-3" style="background-color: white">
+        <div class="container">
+          <div class="row">
+            <div class="col">ATENDIMENTO AO CLIENTE</div>
+            <div class="col-7"></div>
+            <div class="col">AJUDA E SUPORTE</div>
+          </div>
+          <div class="row">
+            <div class="col">&CircleDot;<a href="#">Política de frete</a></div>
+            <div class="col-7"></div>
+            <div class="col">&CircleDot;<a href="#">Contate-nos</a></div>
+          </div>
+          <div class="row">
+            <div class="col">&CircleDot;<a href="#">Devolução</a></div>
+            <div class="col-7"></div>
+            <div class="col">
+              &CircleDot;<a href="#">Método de pagamento</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">&CircleDot;<a href="#">Como pedir</a></div>
+            <div class="row">
+              <div class="col">&CircleDot;<a href="#">Rastrear</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
     <script>
         const form            =   document.getElementById("form");
         const _idInput        =   document.getElementById("_id");
-        const PreçoInput  =   document.getElementById("Preço");
-        const nomeInput       =   document.getElementById("nome");
-        const DescriçãoInput =   document.getElementById("Descrição");
+        const NomeInput  =   document.getElementById("Nome");
+        const EmailInput       =   document.getElementById("Email");
+        const SenhaInput =   document.getElementById("Senha");
 
         btn.addEventListener("click", () => {
             const _id         =   _idInput.value;
-            const Preço   =   PreçoInput.value;
-            const nome        =   nomeInput.value;
-            const Descrição  =   DescriçãoInput.value;
+            const Nome   =   NomeInput.value;
+            const Email        =   EmailInput.value;
+            const Senha  =   SenhaInput.value;
 
             if (_id === '') {
 
-                axios.post("http://localhost:3000/produto", {
+                axios.post("http://localhost:3000/usuario/", {
 
-                    Preço: parseFloat(Preço),
-                    nome: nome,
-                    Descrição: Descrição
+                    Nome: Nome,
+                    Email: Email,
+                    Senha: Senha
 
                 })
                 .then((response) => {
@@ -205,11 +202,10 @@
 
             } else {
                 
-                axios.put("http://localhost:3000/produto/" + _id +'', {
-
-                    Preço: parseFloat(Preço),
-                    nome: nome,
-                    Descrição: Descrição
+                axios.put("http://localhost:3000/usuario/" + _id +'', {
+                    Nome: Nome,
+                    Email: Email,
+                    Senha: Senha
 
                 })
                 .then((response) => {
@@ -229,4 +225,4 @@
     </script>
     
 </body>
-</html> 
+</html>
